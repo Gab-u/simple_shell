@@ -4,7 +4,7 @@
  * _erratoi - converts a string to an integer
  * @s: the string to be converted
  * Return: 0 if no numbers in string, converted number otherwise
- * -1 on error
+ *       -1 on error
  */
 int _erratoi(char *s)
 {
@@ -31,9 +31,9 @@ int _erratoi(char *s)
 /**
  * print_error - prints an error message
  * @info: the parameter & return info struct
- * @estr: string containing specified error typ
+ * @estr: string containing specified error type
  * Return: 0 if no numbers in string, converted number otherwise
- * -1 on error
+ *        -1 on error
  */
 void print_error(info_t *info, char *estr)
 {
@@ -87,11 +87,11 @@ int print_d(int input, int fd)
 
 /**
  * convert_number - converter function, a clone of itoa
- *  @num: number
- *  @base: base
- *  @flags: argument flags
+ * @num: number
+ * @base: base
+ * @flags: argument flags
  *
- *  Return: string
+ * Return: string
  */
 char *convert_number(long int num, int base, int flags)
 {
@@ -105,6 +105,7 @@ char *convert_number(long int num, int base, int flags)
 	{
 		n = -num;
 		sign = '-';
+
 	}
 	array = flags & CONVERT_LOWERCASE ? "0123456789abcdef" : "0123456789ABCDEF";
 	ptr = &buffer[49];
